@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styleLIMPIO.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet">
+    <link rel="shortcut icon" href="img/logonav.png" type="image/x-icon" class="logoArriba">
+    <title>Proyecto Final Ada</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="img/logo.png" alt="" />
+          <h2 class="neon">Rick and Morty</h2>
+        </div>
+      </header>
+    <main>
+<!--Aca vamos a insertar el filtro de personajes que se van a visualizar debajo -->
+<div class="characterFilter">
+ <h3 class="neon">Filtrar por :</h3>
+<button class="todos neon">Todos</button>
+<button class="female-btn neon">Mujeres</button>
+<button class="male-btn neon">Hombres</button>
+<button class="genderless-btn neon">Sin genero</button>
+<button class="unknow-btn neon">Desconocido</button>
+</div>
+<!--Aca visualizamos los personajes-->
+ <div class="container" id="container">
+ </div>
+
+ <div class="loader-pagination">
+    <p class="neon"><strong>Pagina actual:</strong> <span class="paginaActual"></span></p>
+    <p class="neon"><strong>Total de paginas: </strong><span class="totalPaginas"></span></p>
+  </div>
+<!--paginado con botones y demas-->
+ <div class="pagination ">
+    <button class="firstPage-btn neon" disabled><strong>Primer Pagina</strong></button>
+    <button class="previewPage-btn neon" disabled><strong>Anterior</strong></button>
+    <button class="nextPage-btn neon" disabled><strong>Siguiente</strong></button>
+    <button class="lastPage-btn neon"disabled><strong>Ultima Pagina</strong></button>
+ </div>
+ </main>
+    <footer>
+      Gabriela Beatriz Pardo| &#169 
+    </footer>
+    <script src="mainLIMPIO.js"></script>
+</body>
+</html>
